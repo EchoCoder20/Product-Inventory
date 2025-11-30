@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 480px;
+    margin: 80px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Update Button (Blue) */
+.btn.update {
+    background-color: #2196F3;
+}
+
+.btn.update:hover {
+    background-color: #0b7dda;
+}
+
+/* Delete Button (Red) */
+.btn.delete {
+    background-color: #f44336;
+}
+
+.btn.delete:hover {
+    background-color: #c62828;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background-color: #333;
+}
