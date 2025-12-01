@@ -94,8 +94,12 @@ public class ProductController {
     }
     @GetMapping("getById")
     public String getProductById(Model model, @RequestParam int id) throws Exception {
-        Product product =productServices.findById(id);
-        model.addAttribute("products",product);
+        try {
+            Product product =productServices.findById(id);
+            model.addAttribute("products",product);
+        }catch (Exception e){
+            model.addAttribute("products",null);
+        }
         return "result";
 
     }

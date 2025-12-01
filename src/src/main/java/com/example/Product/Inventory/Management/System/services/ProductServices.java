@@ -79,5 +79,11 @@ public class ProductServices {
             throw new Exception("Bad Request");
         }
     }
-
+    public Product getProductById(int id){
+        Product product=productRepositories.findById(id).get();
+        if(product!=null){
+           return product;
+        }
+        return null;
+    }
 }
